@@ -2,7 +2,9 @@
 
 This is a ROS package for real-time 3D reconstruction from stereo images. Currently this version uses [LIBELAS](http://www.cvlibs.net/software/libelas/) for generating dense disparity maps as a baseline. The method for generation of disparity maps can be changed based on user preferences.
 
-This package serves as a visualization tool for dense disparity maps and the point clouds formed. Additionally, a tool for transforming the point cloud to a different reference frame is also included. Usually, the point clouds formed are in the reference frame of the left camera. For ground robots, often the point clouds need to be transformed to a different frame *e.g.*, a reference frame with the origin at the centre of rotation of the robot projected on to the ground plane. These transformations are hard to calculate mathematically - this tool can be used to find the transformations visually.
+This package serves as a visualization tool for dense disparity maps and point clouds. Additionally, a tool for transforming point clouds to a different reference frame is also included. 
+
+Usually, the point clouds are formed in the reference frame of the left camera. For ground robots, often the point clouds need to be transformed to a different frame *e.g.*, a reference frame with the origin at the centre of rotation of the robot projected on to the ground plane. These transformations are hard to calculate mathematically - this tool can be used to find the transformations visually.
 
 ## Dependencies
 
@@ -44,10 +46,10 @@ The point cloud can be viewed on `rviz` by running
 $ rosrun rviz rviz
 ```
 
-To transform the point cloud to a different reference frame, the `XR` and `XT` matrices (rotation and translation) in the calibration file needs to be changed. This can be done real-time by the running
+To transform the point cloud to a different reference frame, the `XR` and `XT` matrices (rotation and translation) in the calibration file need to be changed. This can be done real-time by the running
 
 ```bash
 $ rosrun rqt_reconfigure rqt_reconfigure
 ```
 
-Modify the euler angles and translation vector to get the desired transformation.
+Modify the euler angles and the translation vector to get the desired transformation.
