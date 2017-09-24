@@ -73,7 +73,7 @@ Usage: dense_reconstruction [OPTION...]
 This node outputs the dense disparity map as a grayscale image on the topic `/camera/left/disparity_map` and the corresponding point cloud on the topic 
 `/camera/left/point_cloud`.
 
-An sample dataset can be found [here](https://greyhound.cs.umass.edu/owncloud/index.php/s/3g9AwCSkGi6LznK).
+A sample dataset can be found [here](https://greyhound.cs.umass.edu/owncloud/index.php/s/3g9AwCSkGi6LznK).
 
 ## Point Cloud Transformation
 
