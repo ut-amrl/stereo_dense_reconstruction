@@ -34,7 +34,7 @@ matrix and `XT` should be a **3 x 1** matrix. Please see a sample calibration fi
 Clone the repository:
 
 ```bash
-$ git clone https://github.com/umass-amrl/stereo-dense-reconstruction
+$ git clone https://github.com/umass-amrl/stereo_dense_reconstruction
 ```
 
 For compiling the ROS package, `rosbuild` is used. Add the path of the ROS package to `ROS_PACKAGE_PATH` and put the following line in your `.bashrc` file. 
@@ -47,7 +47,7 @@ $ export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/PATH
 Execute the `build.sh` script:
 
 ```bash
-$ cd stereo-dense-reconstruction
+$ cd stereo_dense_reconstruction
 $ chmod +x build.sh
 $ ./build.sh
 ```
